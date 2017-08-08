@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components/native';
 import Header from 'components/common/header';
-import { COLORS } from 'constants/styles';
+import Actions from '../../../Actions';
+import { COLORS } from 'constants/style';
 import { TouchableWithoutFeedback, ScrollView, TouchableOpacity } from 'react-native';
 import ShowData from 'data/data';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -95,11 +96,20 @@ class HomeScreen extends Component {
 		super(props);
 
 		this.state = {
-			selected: 'browse',
+			selected: 'my-list',
 		};
 
 		this.setActiveUserNavigation = this.setActiveUserNavigation.bind(this);
 	}
+
+  componentWillMount() {
+    Actions.auth();
+  }
+  
+  componentDidMount() {  
+    Actions.loadUser.completed.listen(this._onLoadUserCompleted.bind(this));
+    Actions.logout.listen(this._onLogout.bind(this));
+  }
 
 	setActiveUserNavigation(selected) {
 		this.setState({
@@ -109,7 +119,7 @@ class HomeScreen extends Component {
 
 
 	renderUserNavigation() {
-		const userNavigation = [{ title: 'BROWSE', id: 'browse' }, { title: 'MY LIST', id: 'my-list' }];
+		const userNavigation = [{ title: 'BROWSE', id: 'browse' }, { title: 'MY Blogs', id: 'my-list' },{ title: 'POSTS', id: 'posts' }];
 		const { selected } = this.state;
 
 		return userNavigation.map((element,index) => {
@@ -149,7 +159,7 @@ class HomeScreen extends Component {
         <SubHeader>
           <SubHeaderTextContainer>
             <SubHeaderTitleText>
-              {'Trending Now'}
+              {'Trending Posts'}
             </SubHeaderTitleText>
             <SubHeaderText>
               {'Recommended for you'}
@@ -176,7 +186,7 @@ class HomeScreen extends Component {
         </ScrollView>
         <SubHeader>
           <SubHeaderTitleText>
-            {'Continue Watching for JM'}
+            {'Read Another Category'}
           </SubHeaderTitleText>
           <AllContainer>
             <AllText>{'All'}</AllText>
@@ -223,6 +233,14 @@ class HomeScreen extends Component {
       </Container>			
 		);
 	}
+
+  _onLoadUserCompleted(user) {
+
+  }
+
+  _onLogout() {
+    this.props.navigation.navigate('Login');
+  }
 }
 
 export default HomeScreen;

@@ -1,115 +1,46 @@
-const DARE_DEVIL = require('../../assets/images/dare-devil.jpeg');
-const HOUSE_OF_CARDS = require('../../assets/images/house-of-cards.jpeg');
-const LUKE_CAGE = require('../../assets/images/luke-cage.jpeg');
-const ORANGE_IS_THE_NEW_BLACK = require('../../assets/images/orange-is-the-new-black.jpeg');
-const STRANGER_THINGS = require('../../assets/images/stranger-things.jpeg');
+const Image1 = require('../../assets/images/1.jpeg');
+const Image2 = require('../../assets/images/2.png');
+const Image3 = require('../../assets/images/3.jpg');
+const Image4 = require('../../assets/images/4.jpg');
+const Image5 = require('../../assets/images/5.jpg');
 
 const SHOWS = [
   {
-    title: 'Daredevil',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
+    title: 'Post 1',
+    summary: '(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
     starring: 'Winona Ryder, David Harbour, Mathew Modine',
     creator: 'The Duffer Brothers',
-    image: DARE_DEVIL,
+    image: Image1,
   },
   {
-    title: 'House Of Cards',
+    title: 'Post 2',
     summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
     starring: 'Winona Ryder, David Harbour, Mathew Modine',
     creator: 'The Duffer Brothers',
-    image: HOUSE_OF_CARDS,
+    image: Image2,
   },
   {
     title: 'Luke Cage',
     summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
     starring: 'Winona Ryder, David Harbour, Mathew Modine',
     creator: 'The Duffer Brothers',
-    image: LUKE_CAGE,
+    image: Image3,
   },
   {
     title: 'Orange Is The New Black',
     summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
     starring: 'Winona Ryder, David Harbour, Mathew Modine',
     creator: 'The Duffer Brothers',	
-    image: ORANGE_IS_THE_NEW_BLACK,
+    image: Image4,
   },
   {
     title: 'Stranger Things',
     summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
     starring: 'Winona Ryder, David Harbour, Mathew Modine',
     creator: 'The Duffer Brothers',
-    image: STRANGER_THINGS,
+    image: Image5,
   },
-  {
-    title: 'Daredevil',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: DARE_DEVIL,
-  },
-  {
-    title: 'House Of Cards',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: HOUSE_OF_CARDS,
-  },
-  {
-    title: 'Luke Cage',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: LUKE_CAGE,
-  },
-  {
-    title: 'Orange Is The New Black',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: ORANGE_IS_THE_NEW_BLACK,
-  },
-  {
-    title: 'StrangerThings',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: STRANGER_THINGS,
-  },
-  {
-    title: 'Dare Devil',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: DARE_DEVIL,
-  },
-  {
-    title: 'House Of Cards',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: HOUSE_OF_CARDS,
-  },
-  {
-    title: 'LukeCage',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: LUKE_CAGE,
-  },
-  {
-    title: 'Orange Is TheNewBlack',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: ORANGE_IS_THE_NEW_BLACK,
-  },
-  {
-    title: 'Stranger Things',
-    summary: 'When a young boy vanishes, a small town uncovers a mystery involving a secret experiment, terrify supernatural forces, and one strange little girl',
-    starring: 'Winona Ryder, David Harbour, Mathew Modine',
-    creator: 'The Duffer Brothers',
-    image: STRANGER_THINGS,
-  },
+
 ];
 
 export default SHOWS;

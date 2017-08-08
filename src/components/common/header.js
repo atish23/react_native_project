@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { COLORS } from 'constants/styles';
+import { COLORS } from 'constants/style';
 import { TouchableWithoutFeedback } from 'react-native';
-const NETFLIX_LOGO = require('../../../assets/icons/netflix-logo.png');
+const NETFLIX_LOGO = require('../../../assets/icons/innerhour.png');
 
 const Container = styled.View`
   display: flex;
@@ -41,11 +41,12 @@ class Header extends Component {
 				</TouchableWithoutFeedback>
 				<LogoContainer source={NETFLIX_LOGO} />
 				<TouchableWithoutFeedback onPress={() => {}}>
-          <IconContainer>
-            <Icon name={'search'} size={30} color={COLORS.GREY.BRIGHT_GREY} />
-          </IconContainer>
-        </TouchableWithoutFeedback>
+		          <IconContainer>
+		            <Icon name={'search'} size={30} color={COLORS.GREY.BRIGHT_GREY} />
+		          </IconContainer>
+		        </TouchableWithoutFeedback>
 			</Container>
-			);
+		);
 	}
 }
+export default Header;
